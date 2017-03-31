@@ -1,0 +1,19 @@
+{
+  "name": "agmstudio-frontend",
+  "version": "0.0.1",
+  "description": "Proyecto del libro Desarrollo Web Frontend Profesional",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krlosh/agmstudio-frontend.git"
+  },
+  "author": "Krlosh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krlosh/agmstudio-frontend/issues"
+  },
+  "homepage": "https://github.com/krlosh/agmstudio-frontend#readme"
+}
