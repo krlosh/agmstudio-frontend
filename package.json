@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/krlosh/agmstudio-frontend/issues"
   },
-  "homepage": "https://github.com/krlosh/agmstudio-frontend#readme"
+  "homepage": "https://github.com/krlosh/agmstudio-frontend#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }

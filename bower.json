@@ -1,0 +1,22 @@
+{
+  "name": "agmstudio-frontend",
+  "description": "Proyecto del libro Desarrollo Web Frontend Profesional",
+  "main": "index.html",
+  "authors": [
+    "Krlosh"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/krlosh/agmstudio-frontend",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0"
+  }
+}
