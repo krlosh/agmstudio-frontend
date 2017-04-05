@@ -3,6 +3,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var del = require('del');
 var path = require('path');
+var processhtml = require('gulp-processhtml');
 
 var runSequence = require('run-sequence');
 var config ={
@@ -27,10 +28,33 @@ var paths ={
       config.folders.assets,'img'),
 };
 
+var targets = {
+  dist: {
+    environment:'dist',
+    data:{
+      assets: config.folders.assets
+    }
+  },
+  dev:{
+    environment:'dev',
+    data:{
+      assets: config.folders.assets
+    }
+  }
+};
+
 gulp.task('html',/*[tareas dependientes]*/function(){
   //Codigo de la tarea
-  gulp.src('src/html/**/*.html')
-    .pipe(gulp.dest(paths.dist));
+  gulp.src(['src/html/**/*.html','!src/html/layout/**/*'])
+    .pipe(processhtml({
+        recursive:true,
+        process:true,
+        strip:true,
+        environment:targets.dev.environment,
+        data:targets.dev.data
+    }
+    ))
+    .pipe(gulp.dest(path.join(paths.html)));
 });
 
 gulp.task('js', function(){
